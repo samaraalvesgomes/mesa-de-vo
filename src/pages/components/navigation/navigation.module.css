@@ -6,14 +6,50 @@
     font-size:15px;
     min-width:100%;
     justify-content: space-around;
-    margin: 0% 0% 0% 5%;
+    
+}
+
+.titleNav{
+    margin: 0% 0% 0% 3%;
+    font-family:Poppins;
+    font-size: 20px;
+}
+
+.buttonGroup{
+    gap: 2%;
 }
 
 .buttonNav{
-    backgroundColor: "none";
-    background: "none";
-    border: "none";
-    fontFamily: "Poppins";
-    fontSize: "16px";
-    textTransform: "none";
+    background-color: none;
+    background: none;
+    border: none;
+    font-family: Poppins;
+    font-size: 16px;
+    text-transform: none;
+}
+
+.buttonGroupLogin{
+    gap: 5%;
+    
+}
+
+.buttonNavEnter{
+    background-color: #F58968;
+    background: #F58968;
+    border: none;
+    font-family: Poppins;
+    font-size: 16px;
+    text-transform: none;
+    
+}
+
+.buttonNavRegister{
+    background-color: none;
+    background: none;
+    border: none;
+    font-family: Poppins;
+    font-size: 16px;
+    text-transform: none;
+    color: #F58968;
+    
 }
