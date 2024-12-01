@@ -1,0 +1,89 @@
+.intro {
+    background-color: #663B22;
+    padding: 80px 0px 80px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .title {
+    font-size: 48px;
+    font-family:'Playwrite US Trad', sans-serif;
+    font-weight: 400;
+    margin-left: 8%;
+    color: #FBFBFB;
+  }
+
+  .names {
+    font-size: 24px;
+    display: flex;
+    gap: 8px;
+    font-family: Poppins;
+    color: #DEC7BA;
+    ;
+  }
+
+  .finalContent {
+    font-size: 40px;
+    font-family:'Playwrite US Trad', sans-serif;
+    margin: 0% 0% 0% 2%;
+    font-weight: 400;
+    color:#DEC7BA;
+    ;
+  }
+
+  .icon {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    margin: 10px;
+    gap: 5px;
+    margin-left: 9.5%;
+    font-size: 14px;
+    font-family: Poppins;
+    color: #FFFFFF;
+  }
+
+  .cardNames {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .socialMedia {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+  }
+
+  .cardRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0% 8% 0% 8%;
+  }
+
+  .contentLink {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .grandma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 2% 0% 0%;
+  }
+
+  .photo {
+    width: 100px;
+    color:#DEC7BA;
+  }
