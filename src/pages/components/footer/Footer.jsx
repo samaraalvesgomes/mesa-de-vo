@@ -1,13 +1,11 @@
 import React from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import styles from './styles.module.css';
-
+import styles from "./styles.module.css";
 
 function Footer() {
   return (
     <>
-    
       <div className={styles.intro}>
         <div className={styles.title}>Desenvolvedores</div>
         <div className={styles.cardRow}>
@@ -128,10 +126,10 @@ function Footer() {
           </div>
         </div>
         <div className={styles.grandma}>
-          <img className={styles.photo} src="./img/vovo.png"></img>
+          <img className={styles.photo} src="./img/iconeVovo.svg"></img>
           <h2 className={styles.finalContent}>Bon appétit!</h2>
         </div>
-      </div>    
+      </div>
     </>
   );
 }
