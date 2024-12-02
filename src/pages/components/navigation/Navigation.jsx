@@ -1,4 +1,5 @@
 import { Button, ButtonGroup, Link} from "@mui/material";
+import {Col, Flex, Row} from "antd";
 import styles from './navigation.module.css';
 
 function Navigation() {
@@ -21,14 +22,21 @@ function Navigation() {
             </Link>
           </ButtonGroup>
 
-          <ButtonGroup className={styles.buttonGroupLogin} variant="text" aria-label="Basic button group" >
-            <Link href="./sign-in-side/SignInSide" passHref>
-              <Button className={styles.buttonNavEnter} variant="contained"> Entrar </Button>
-            </Link>
-            <Link href="./sign-in-side/SignInSide" passHref>
-              <Button className={styles.buttonNavRegister} variant="contained"> Resgistre-se </Button>
-            </Link>
-          </ButtonGroup>
+          
+            <Row className={styles.row}>
+              <Col xs={12}>
+                <Link href="./sign-in-side/SignInSide" passHref>
+                  <Button className={styles.buttonNavEnter} variant="contained"> Entrar </Button>
+                </Link>
+              </Col>
+
+              <Col xs={12}>
+                <Link href="./sign-in-side/SignInSide" passHref>
+                  <Button className={styles.buttonNavRegister} variant="contained"> Resgistre-se </Button>
+                </Link>
+              </Col>
+            </Row>
+          
 
          
         </nav>
