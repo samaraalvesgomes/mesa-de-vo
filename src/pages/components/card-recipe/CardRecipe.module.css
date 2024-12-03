@@ -2,10 +2,13 @@
     width: 336px; /* Largura fixa */
     height: 411px;
     border-radius: 12px; /* Bordas arredondadas */
+    background-color:#FFFFFF;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
     overflow: hidden;
     transition: transform 0.3s ease; /* Efeito de hover */
     font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
     color: #663B22;
   }
   
@@ -17,49 +20,38 @@
     width: 100%; 
     height: 336px; 
     object-fit: cover; /* Garante proporção sem distorcer */
-    
   }
-  
-  .card-content {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-     
-  }
-  
-  .card-content h3 {
-    font-size: 1.2rem; 
-    font-weight: bold;
-    margin: 0; 
-    color: #5C3218; 
-  }
-  
+
   .card-details {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
+    gap: 12px;
     align-items: center;
-    margin-top: 12px;
+    margin-top: 16px;
     font-size: 0.9rem;
     color: #5C3218;
   }
   
-  .card-details span {
-    display: flex;
-    align-items: center;
-    gap: 5px; 
-  }
-  
-  .card-details span svg {
-    font-size: 1.2rem; /* Ajuste o tamanho do ícone */
-    color: #555;
-  }
-  
-  .cardsContainer {
-    display: flex;
-    flex-wrap: wrap; /* Permite quebrar linha para os cards */
-    gap: 24px; 
-    justify-content: center; 
-    padding: 20px;
-  }
+  .spantext {
+    display: inline-block; /* Torna o span um contêiner flex */
+    padding: 2%;
+    align-items: center; /* Alinha verticalmente o conteúdo ao centro */
+    gap: 6px; /* Espaçamento entre o ícone e o texto */
+    font-size: 14px; /* Tamanho do texto */
+    color: #5C3218; /* Cor do texto */
+}
+
+.spantext svg {
+  font-size: 1.3rem;
+  vertical-align: middle; /* Ajuste o tamanho do ícone */
+}
+
+.cardTitle {
+  font-size: 17px; /* Tamanho do título */
+  font-weight: 600; /* Negrito */
+  color: #5C3218; /* Cor */
+  margin: 2% 0% 0.4% 3%; /* Reduza o espaçamento inferior para 4px */ /* Centraliza o texto horizontalmente */
+  line-height: 1.4; /* Espaçamento entre linhas */
+}
+ 

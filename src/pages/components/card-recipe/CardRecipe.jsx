@@ -7,34 +7,30 @@ import styles from './CardRecipe.module.css';
 const CardRecipe = ({ image, title, author, difficulty, time }) => {
   return (
     <div className={styles.card}>
-      <img src={image} alt={title} />
-      <div>
-      <div className={styles.cardContent}>
-        <h3>{title}</h3>
-        <div className={styles.cardDetails}>
-          <span className={styles.span}>
-            <PersonIcon />
-            {author}
-          </span>
-       <span className={styles.span}>
-         |
-        </span>     
-          <span className={styles.span}>
-            <BarChartIcon />
-            {difficulty}
-          </span>
-          <span className={styles.span}>
-         |
-        </span> 
-          <span className={styles.span}>
-            <TimerIcon />
-            {time}
-          </span>
-        </div>
-        
-      </div>
+  <img src={image} alt={title} />
+  <div>
+    <span className={styles.title}>
+    <h3 className={styles.cardTitle}>{title}</h3>
+    </span>
+    <div className={styles.cardDetails}>
+      <span className={styles.spantext}>
+        <PersonIcon />
+        {author}
+      </span>
+      <span className={styles.spantext}>|</span>
+      <span className={styles.spantext}>
+        <BarChartIcon />
+        {difficulty}
+      </span>
+      <span className={styles.spantext}>|</span>
+      <span className={styles.spantext}>
+        <TimerIcon />
+        {time}
+      </span>
     </div>
-    </div>
+  </div>
+</div>
+
   );
 };
 

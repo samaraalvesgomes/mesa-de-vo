@@ -4,6 +4,8 @@ import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
 import Footer from "./components/footer/Footer";
 import Navigation from "./components/navigation/Navigation";
+import CardRecipe from "./components/card-recipe/CardRecipe";
+import CardBetters from "./CardBetters";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,6 +29,7 @@ export default function Home() {
       </Head>
     <Navigation/>
     <Footer/>
+    <CardBetters/>
     </>
   );
 }
