@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
 import Footer from "./components/footer/Footer";
 import Navigation from "./components/navigation/Navigation";
+import { Height } from "@mui/icons-material";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,7 +26,19 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <Navigation/>
+    
+    <header style={{backgroundImage: "url('/img/BackgroundHeader.png')", height: "100vh", backgroundSize: "cover", backgroundPosition: "center", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+    <div style={{ width: "100%" }}>
+      <Navigation />
+    </div>
+      <div style={{flex: 1, display: "flex",
+      flexDirection: "column", alignItems: "center", justifyContent: "center",width:"100vh", gap:"5vh"}}>
+        <h1 style={{fontFamily: "Playwrite US Trad",
+fontSize: "48px", fontWeight: "400", lineHeight: "92.74px", textAlign: "center", textUnderlinePosition: "fromFont", textDecorationSkipInk: "none"
+}}>Sabores que Abraçam!!</h1>
+        <p style={{fontFamily: "Work Sans", fontSize: "20px", fontWeight: "400", lineHeight: "23.46px", textAlign: "center", textUnderlinePosition: from-font, textDecorationSkipInk: none}}>Descubra receitas que trazem o aconchego de casa para a sua mesa. Explore pratos que alimentam o corpo e aquecem o coração.</p>
+      </div>
+    </header>
     <Footer/>
     </>
   );
