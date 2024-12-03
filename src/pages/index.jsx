@@ -27,16 +27,47 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     
-    <header style={{backgroundImage: "url('/img/BackgroundHeader.png')", height: "100vh", backgroundSize: "cover", backgroundPosition: "center", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-    <div style={{ width: "100%" }}>
-      <Navigation />
-    </div>
-      <div style={{flex: 1, display: "flex",
-      flexDirection: "column", alignItems: "center", justifyContent: "center",width:"100vh", gap:"5vh"}}>
+    <header style={{backgroundImage: "url('/img/BackgroundHeader.png')",
+    width: "auto", 
+    height: "100vh", 
+    opacity: "1",
+    display:"flex",
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "column",
+    }}>
+      <div style={{position: "absolute",
+      top: "0",
+      left: "0",
+      width: "100%"}}>
+        <Navigation/>
+      </div>
+      <div style={{position: "relative",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "90vh",
+    gap: "5vh",
+    background: "rgba(0, 0, 0, 0.1)",
+    backdropFilter: "blur(5px)",
+    height: "auto", padding: "2vh"  }}>
+
+
         <h1 style={{fontFamily: "Playwrite US Trad",
-fontSize: "48px", fontWeight: "400", lineHeight: "92.74px", textAlign: "center", textUnderlinePosition: "fromFont", textDecorationSkipInk: "none"
-}}>Sabores que Abraçam!!</h1>
-        <p style={{fontFamily: "Work Sans", fontSize: "20px", fontWeight: "400", lineHeight: "23.46px", textAlign: "center", textUnderlinePosition: from-font, textDecorationSkipInk: none}}>Descubra receitas que trazem o aconchego de casa para a sua mesa. Explore pratos que alimentam o corpo e aquecem o coração.</p>
+      fontSize: "48px",
+      fontWeight: "400",
+      lineHeight: "92.74px",
+      textAlign: "center",
+      textUnderlinePosition: "fromFont",
+      textDecorationSkipInk: "none"}}> Sabores que Abraçam!!</h1>
+        <p style={{fontFamily: "Work Sans",
+      fontSize: "20px",
+      fontWeight: "400",
+      lineHeight: "23.46px",
+      textAlign: "center",
+      textUnderlinePosition: "from-font",
+      textDecorationSkipInk: "none"}}>Descubra receitas que trazem o aconchego de casa para a sua mesa. Explore pratos que alimentam o corpo e aquecem o coração.</p>
       </div>
     </header>
     <Footer/>
