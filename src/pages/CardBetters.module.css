@@ -1,0 +1,25 @@
+.middleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFEFEA;
+  padding: 0 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.titleMiddle {
+  font-family: 'Playwrite US Trad', serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #5C3218;
+  margin: 5% 62% 0 0; 
+  white-space: nowrap; 
+}
+
+.cardsContainer {
+  display: flex;
+  margin: 3% 5.5% 15% 0%; 
+  gap: 16px;
+  justify-content: center; 
+  flex-wrap: wrap; 
+}
